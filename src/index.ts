@@ -7,10 +7,10 @@ config();
 
 const server = new ApolloServer(APOLLO_CONFIG);
 
-const port = 4000 || Number(process.env.PORT);
+const port = process.env.PORT ? process.env.PORT : 4000;
 
 startStandaloneServer(server, {
-  listen: {port},
+  listen: {port: Number(port)},
 })
   .then(({url}) => {
     console.info(`🚀 Server ready at ${url}`);
