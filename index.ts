@@ -1,7 +1,7 @@
 import { ApolloServer } from '@apollo/server';
 import { startStandaloneServer } from '@apollo/server/standalone';
 import { config } from 'dotenv';
-import { APOLLO_CONFIG } from './base';
+import { APOLLO_CONFIG } from './src/base';
 
 config();
 
