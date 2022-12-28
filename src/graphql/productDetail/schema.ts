@@ -1,10 +1,9 @@
-import {gql} from 'apollo-server';
-
-const productDetailSchema = gql`
+const productDetailSchema = `
   type ProductDetails {
     author: Author
     item: Product
   }
 `;
 
-export {productDetailSchema};
+export { productDetailSchema };
+

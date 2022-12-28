@@ -1,6 +1,4 @@
-import {gql} from 'apollo-server';
-
-const productSchema = gql`
+const productSchema = `
   type Product {
     id: String!
     title: String!
@@ -15,4 +13,5 @@ const productSchema = gql`
   }
 `;
 
-export {productSchema};
+export { productSchema };
+

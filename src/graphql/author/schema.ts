@@ -1,10 +1,9 @@
-import {gql} from 'apollo-server';
-
-const authorSchema = gql`
+const authorSchema = `
   type Author {
     name: String!
     lastname: String!
   }
 `;
 
-export {authorSchema};
+export { authorSchema };
+

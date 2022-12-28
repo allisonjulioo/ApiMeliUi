@@ -1,5 +1,5 @@
-import {RESTDataSource, HTTPCache} from 'apollo-datasource-rest';
-import {config} from 'dotenv';
+import { RESTDataSource } from '@apollo/datasource-rest';
+import { config } from 'dotenv';
 
 config();
 
@@ -7,7 +7,8 @@ class BaseDataSource extends RESTDataSource {
   constructor() {
     super();
     this.baseURL = process.env.MELI_API_ENDPOINT_REST;
-    this.httpCache = new HTTPCache();
+    this.memoizeGetRequests = false;
   }
 }
-export {BaseDataSource};
+export { BaseDataSource };
+

@@ -1,6 +1,4 @@
-import {gql} from 'apollo-server';
-
-const productsListSchema = gql`
+const productsListSchema = `
   type Products {
     author: Author
     categories: [String!]
@@ -8,4 +6,5 @@ const productsListSchema = gql`
   }
 `;
 
-export {productsListSchema};
+export { productsListSchema };
+

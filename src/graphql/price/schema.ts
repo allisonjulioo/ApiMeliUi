@@ -1,6 +1,6 @@
-import {gql} from 'apollo-server';
+ 
 
-const priceSchema = gql`
+const priceSchema = `
   type Price {
     currency: String
     amount: String
@@ -10,4 +10,5 @@ const priceSchema = gql`
   }
 `;
 
-export {priceSchema};
+export { priceSchema };
+

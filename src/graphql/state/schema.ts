@@ -1,10 +1,9 @@
-import {gql} from 'apollo-server';
-
-const stateSchema = gql`
+const stateSchema = `
   type State {
     id: String!
     name: String!
   }
 `;
 
-export {stateSchema};
+export { stateSchema };
+

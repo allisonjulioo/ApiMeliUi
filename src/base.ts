@@ -1,14 +1,13 @@
-import {Config} from 'apollo-server';
+import { resolvers } from './graphql/resolvers';
+import { typeDefs } from './graphql/typeDefs';
 
-import {resolvers} from './graphql/resolvers';
-import {typeDefs} from './graphql/typeDefs';
-
-const APOLLO_CONFIG: Config = {
+const APOLLO_CONFIG = {
   typeDefs,
   resolvers,
-  context: async context => ({
+  context: async (context: any) => ({
     ...context,
   }),
 };
 
-export {APOLLO_CONFIG};
+export { APOLLO_CONFIG };
+
