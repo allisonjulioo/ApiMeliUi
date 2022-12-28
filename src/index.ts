@@ -7,7 +7,7 @@ config();
 
 const server = new ApolloServer(APOLLO_CONFIG);
 
-const port = Number(process.env.MELI_API_PORT) ?? 80;
+const port =  Number(process.env.PORT) || 4000;
 
 startStandaloneServer(server, {
   listen: {port},
