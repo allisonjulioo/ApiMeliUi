@@ -7,7 +7,7 @@ config();
 
 const server = new ApolloServer(APOLLO_CONFIG);
 
-const port =  Number(process.env.PORT) || 4000;
+const port = 4000 || Number(process.env.PORT);
 
 startStandaloneServer(server, {
   listen: {port},
